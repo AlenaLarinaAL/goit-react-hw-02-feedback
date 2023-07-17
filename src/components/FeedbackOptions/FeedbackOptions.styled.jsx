@@ -4,7 +4,7 @@ import { theme } from 'styles/theme';
 export const List = styled.ul`
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 `;
 export const Item = styled.li``;
 export const Button = styled.button`

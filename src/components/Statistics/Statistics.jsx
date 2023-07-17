@@ -1,16 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import css from './Statistics.module.css';
+import { List, Item, Span } from './Statistics.styled';
 
 export const Statistics = ({ good, neutral, bad, total, positive }) => {
   return (
-    <ul>
-      <li>Good: {good}</li>
-      <li>Neutral: {neutral}</li>
-      <li>Bad: {bad}</li>
-      <li>Total: {total}</li>
-      <li>Positive Feedbacks: {positive}%</li>
-    </ul>
+    <List>
+      <Item>
+        Good: <Span>{good}</Span>
+      </Item>
+      <Item>
+        Neutral: <Span>{neutral}</Span>
+      </Item>
+      <Item>
+        Bad: <Span>{bad}</Span>
+      </Item>
+      <Item>
+        Total: <Span>{total}</Span>
+      </Item>
+      <Item>
+        Positive Feedbacks: <Span>{positive} %</Span>
+      </Item>
+    </List>
   );
 };
 
